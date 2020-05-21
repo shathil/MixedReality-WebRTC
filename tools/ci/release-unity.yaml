@@ -20,8 +20,17 @@ parameters:
 
 stages:
 
+# Build libwebrtc
+- stage: build_libwebrtc
+  displayName: 'Build libwebrtc'
+  jobs:
+  - template: templates/jobs-libwebrtc-android.yaml
+    parameters:
+      buildConfig: 'release'
+
 # Compile all Release build variants of mrwebrtc.dll
 - stage: build_mrwebrtc
+  dependsOn: build_libwebrtc
   displayName: 'Build mrwebrtc'
   jobs:
   - template: templates/jobs-cpp.yaml
