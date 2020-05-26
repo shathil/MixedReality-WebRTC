@@ -38,7 +38,6 @@ stages:
       buildAgent: '${{parameters.buildAgent}}'
       buildPlatform: 'Win32'
       buildArch: 'x86'
-      msbuildPlatform: 'Win32'
       buildConfig: 'Release'
       withTesting: false
       publishArtifacts: true
@@ -47,7 +46,6 @@ stages:
       buildAgent: '${{parameters.buildAgent}}'
       buildPlatform: 'Win32'
       buildArch: 'x64'
-      msbuildPlatform: 'x64'
       buildConfig: 'Release'
       withTesting: false
       publishArtifacts: true
@@ -56,7 +54,6 @@ stages:
       buildAgent: '${{parameters.buildAgent}}'
       buildPlatform: 'UWP'
       buildArch: 'x86'
-      msbuildPlatform: 'Win32'
       buildConfig: 'Release'
       withTesting: false
       publishArtifacts: true
@@ -65,7 +62,6 @@ stages:
       buildAgent: '${{parameters.buildAgent}}'
       buildPlatform: 'UWP'
       buildArch: 'x64'
-      msbuildPlatform: 'x64'
       buildConfig: 'Release'
       withTesting: false
       publishArtifacts: true
@@ -74,7 +70,6 @@ stages:
       buildAgent: '${{parameters.buildAgent}}'
       buildPlatform: 'UWP'
       buildArch: 'ARM'
-      msbuildPlatform: 'ARM'
       buildConfig: 'Release'
       withTesting: false
       publishArtifacts: true
